@@ -1,0 +1,16 @@
+# Node modules (don't push installed packages)
+node_modules/
+
+# Environment variables (important! contains secrets)
+.env
+
+# Logs
+logs
+*.log
+npm-debug.log*
+
+# Optional: OS and editor specific
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/

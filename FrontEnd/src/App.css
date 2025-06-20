@@ -1,0 +1,121 @@
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+  width: 100%;
+}
+
+main {
+
+  height: 100%;
+  width: 100%;
+  padding: 1.5rem;
+  display: flex;
+  gap: 1rem;
+
+}
+
+main .left,
+main .right {
+  height: 100%;
+  flex-basis: 50%;
+  border-radius: 0.7rem;
+}
+
+main .left {
+  background-color: black;
+  position: relative;
+
+}
+
+main .right {
+  background-color: rgb(0, 0, 0);
+  padding: 1rem 2rem;
+
+}
+
+
+/* resuse for the code block */
+
+
+main .right .res {
+  height: 100%;
+  color: rgb(255, 255, 255);
+  padding: 1rem;
+  border-radius: 0.7rem;
+  overflow-y: auto;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 1rem;
+  line-height: 1.5;
+
+}
+
+/* .left .code, 
+.code .pre,
+.code pre code{
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  border-radius: 0.7rem;
+  background-color: rgb(0, 0, 0);
+} */
+
+main .left .review {
+  position: absolute;
+  bottom: 1rem;
+  right: 1rem;
+  background-color: white;
+  margin-right: 1rem;
+  color: black;
+  padding: 0.5rem 2rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  font-weight: bold;
+  font-family: poppins, sans-serif;
+  user-select: none;
+}
+
+main .left .code {
+  /* background-color: gray; */
+  height: 100%;
+  width: 100%;
+  margin-top: 0.4rem;
+  padding: 1rem;
+  border-radius: 0.7rem;
+  background-color: rgb(0, 0, 0);
+}
+
+.head {
+
+  text-align: center;
+  padding: 0.2rem 0.2rem;
+  background-color: rgb(0, 0, 0);
+  color: white;
+  border-radius: 0.7rem;
+  background: rgba(255, 255, 255, 0.1);
+  /* semi-transparent white */
+  backdrop-filter: blur(10px);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  /* ensures it stays above other content */
+
+  font-size: 1.5rem;
+  font-weight: bold;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.foot {
+  text-align: center;
+  padding: 0.2rem 0.2rem;
+  color: white;
+   bottom: 0;
+  font-size: 0.9rem;
+
+}
