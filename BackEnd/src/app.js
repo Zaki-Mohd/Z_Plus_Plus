@@ -6,7 +6,7 @@ const cors = require('cors');
 const app = express();
 
 app.use(cors({
-  origin: 'https://your-frontend.vercel.app', // update this later after frontend is deployed
+  origin: 'https://z-plus-plus.vercel.app/', // update this later after frontend is deployed
   methods: ['GET', 'POST'],
   credentials: true
 })); // Enable CORS for all routes
