@@ -41,6 +41,7 @@ int main() {
 
   return (
     <>
+    <div className="page-wrapper">
       <header className='head'> Z++ Code Editor </header>
       <main>
         <div className="left">
@@ -85,6 +86,7 @@ int main() {
       </a>  */}
 
       </footer>
+      </div>
     </>
   )
 }
