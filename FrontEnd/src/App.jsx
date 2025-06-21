@@ -1,4 +1,3 @@
-require('dotenv').config();
 import { useState, useEffect } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
@@ -22,14 +21,18 @@ int main() {
 }
 `)
   const [review, setreview] = useState('')
+  // console.log("🧪 TEST:", import.meta.env.REACT_APP_TEST_HELLO);
+  // console.log(import.meta.env.REACT_APP_BACKEND_URL)
 
   useEffect(() => {
     Prism.highlightAll();
   }, []);
 
   async function reviewCode() {
+    const BACKEND_URL = import.meta.env.REACT_APP_BACKEND_URL || 'https://z-plus-plus-geminibackend.onrender.com';
+
     try {
-      const response = await axios.post(`${process.env.REACT_APP_BACKEND_URL}/ai/get-review`, { code });
+      const response = await axios.post(`${BACKEND_URL}/ai/get-review`, { code });
       setreview(response.data);
     } catch (error) {
       console.error('Error reviewing code:', error);
