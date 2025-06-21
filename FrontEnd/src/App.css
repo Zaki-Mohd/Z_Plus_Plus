@@ -119,3 +119,28 @@ main .left .code {
   font-size: 0.9rem;
 
 }
+
+
+@media (max-width: 768px) {
+  main {
+    flex-direction: column;
+  }
+
+  .left, .right {
+    width: 100%;
+    height: auto;
+  }
+
+  .code {
+    height: 300px;
+  }
+
+  .res {
+    height: auto;
+    margin-top: 1rem;
+  }
+
+  .review {
+    margin-top: 0.5rem;
+  }
+}
