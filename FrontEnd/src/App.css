@@ -151,3 +151,14 @@ main .left .code {
     margin-top: 0.5rem;
   }
 }
+.slogan {
+  font-size: 0.9rem;
+  color: #4CAF50; /* greenish */
+  margin: 0;
+}
+
+.signature {
+  font-size: 0.8rem;
+  color: #ff4081; /* pinkish */
+  margin: 0;
+}

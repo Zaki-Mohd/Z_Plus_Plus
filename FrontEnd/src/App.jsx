@@ -42,7 +42,11 @@ int main() {
   return (
     <>
     
-      <header className='head'> Z++ Code Editor </header>
+      <header className='head'> Z++ Code Editor
+         <p className='slogan'>Code the Zak Way </p>
+       {/* <p className='signature'>  Made with <i className="fa-solid fa-heart"></i> by Zaki </p> */}
+        
+         </header>
       <main>
         <div className="left">
           <div className="code">
@@ -75,17 +79,17 @@ int main() {
 
         </div>
       </main>
-      <footer className='foot'>
+      {/* <footer className='foot'>
         Code the Zak Way 
         <br></br>
-        Made with <i className="fa-solid fa-heart"></i> by Zaki
+        Made with <i className="fa-solid fa-heart"></i> by Zaki */}
 
         {/* <a href="https://vitejs.dev" target="_blank">
           <p>Made by </p>
         <img src={viteLogo} className="logo" alt="Vite logo" />
       </a>  */}
-
-      </footer>
+{/* 
+      </footer> */}
     
     </>
   )
